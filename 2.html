@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komentar Facebook Style</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-6">
+
+    <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-6">
+        <!-- Bagian Profil -->
+        <div class="flex items-center space-x-4">
+            <img src="https://global.ac.id/wp-content/uploads/2015/04/speaker-3-v2.jpg" width="50px" height="50px" class="rounded-full" alt="Avatar">
+            <div>
+                <h2 class="font-semibold text-lg">John Doe</h2>
+                <p class="text-gray-600 text-sm">Hari ini, 19:12 WIB</p>
+            </div>
+        </div>
+
+        <!-- Konten Postingan -->
+        <p class="mt-4 text-gray-800">
+            Apa pendapat kalian tentang tren teknologi saat ini? Beri komentar di bawah! 👇
+        </p>
+
+        <!-- Tombol Tampilkan/Sembunyikan Komentar -->
+        <button id="toggleButton" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+            Tampilkan Komentar
+        </button>
+
+        <!-- Bagian Komentar -->
+        <div id="commentSection" class="mt-4 hidden">
+            <hr class="my-2">
+            <div class="flex items-center space-x-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJcfgOAc8USRCIZQS-Bo-5eldLn6s5x8h8nY6oQuaeB6KL2hbTC-bSgNd0TTvIJaN-nY&usqp=CAU" width="50px" height="50px" class="rounded-full" alt="Avatar">
+                <div class="bg-gray-200 rounded-lg px-4 py-2">
+                    <h3 class="font-semibold text-sm">Alice</h3>
+                    <p class="text-gray-700 text-sm">Saya pikir teknologi AI semakin menarik!</p>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-3 mt-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy67Hr1Pv-Qpie8F9yXu-6eTqJNNIDJmg_K5KfSuweEfmIpAs2gTk8qjaARGu_17SoETE&usqp=CAU" width="50px" height="50px" class="rounded-full" alt="Avatar">
+                <div class="bg-gray-200 rounded-lg px-4 py-2">
+                    <h3 class="font-semibold text-sm">Bob</h3>
+                    <p class="text-gray-700 text-sm">Benar! AI bisa membantu banyak hal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function() {
+            var commentSection = document.getElementById("commentSection");
+            if (commentSection.classList.contains("hidden")) {
+                commentSection.classList.remove("hidden");
+                this.textContent = "Sembunyikan Komentar";
+            } else {
+                commentSection.classList.add("hidden");
+                this.textContent = "Tampilkan Komentar";
+            }
+        });
+    </script>
+
+</body>
+</html>

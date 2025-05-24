@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery a{
+            background-color: rgb(21, 142, 228);
+            border-radius: 2rem;
+            padding-top: 10px;
+            font-weight: 500;
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        .gallery a:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-6">
+
+    <div class="container text-center">
+        <div class="profile flex justify-center">
+            <img src="https://global.ac.id/wp-content/uploads/2015/04/speaker-3-v2.jpg" alt="Avatar">
+            <div>
+                <h2 class="font-semibold text-xl">John Doe</h2>
+                <p class="text-gray-600 text-sm">Professional Programmer & UI/UX Designer</p>
+            </div>
+        </div>
+
+        <!-- Deskripsi -->
+        <p class="mt-4 text-gray-700">
+            Kumpulan proyek dan karya kreatif mahasiswa, ditampilkan dengan desain yang menarik dan responsif.  
+            Mulai dari pengembangan web hingga desain UI/UX yang modern.
+        </p>
+
+        <!-- Galeri Portofolio -->
+        <div class="gallery">
+            <a href="#">UI/UX</a>
+            <a href="#">Website</a>
+            <a href="#">Application</a>
+            <a href="#">Research</a>
+        </div>
+    </div>
+
+</body>
+</html>
