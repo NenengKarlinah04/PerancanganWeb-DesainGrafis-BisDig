@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SehatKonsul - Konsultasi Kesehatan Online</title>
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f6f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a8c66;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0a8c66;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 40px;
+    }
+
+    .hero-text h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #0a8c66;
+    }
+
+    .hero-text p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #0a8c66;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #066e51;
+    }
+
+    .features {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .feature-box {
+      background-color: #f1f8f5;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 10px;
+      color: #0a8c66;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0ede7;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SehatKonsul</h1>
+    <p>Konsultasi Dokter Online Cepat & Aman</p>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Layanan</a>
+    <a href="#">Dokter</a>
+    <a href="#">Kontak</a>
+    <a href="#">Masuk</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Konsultasi Kesehatan dari Rumah</h2>
+      <p>Terhubung dengan dokter profesional kapan saja dan di mana saja. SehatKonsul hadir untuk memberikan layanan kesehatan cepat dan terpercaya langsung dari layar perangkatmu.</p>
+      <a class="btn-primary" href="#">Mulai Konsultasi</a>
+    </div>
+    <img src="https://st.depositphotos.com/29690442/52147/v/450/depositphotos_521474120-stock-illustration-smartphone-screen-with-a-female.jpg" alt="Ilustrasi dokter online">
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>Dokter Berpengalaman</h3>
+      <p>Tim dokter profesional siap membantu dengan pengalaman klinis yang terbukti.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Konsultasi 24 Jam</h3>
+      <p>Dapatkan layanan kapan pun kamu butuh. Siap siaga setiap saat.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Privasi Terjamin</h3>
+      <p>Data dan konsultasimu aman dengan enkripsi terbaik.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SehatKonsul. Semua Hak Cipta Dilindungi.</p>
+  </footer>
+</body>
+</html>
